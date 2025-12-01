@@ -3,7 +3,7 @@ import requests # type: ignore
 import json
 API_KEY = "e6c6083509fc4d450cde0ca4414b3f"
 def get_weather_with_errors(city):
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric" 
     try:
         response = requests.get(url, timeout=5)
         response.raise_for_status()  
